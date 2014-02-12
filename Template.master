@@ -1,4 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Template.master.cs" Inherits="Template" %>
+<%@ Register Src="Controls/ThemeSelector.ascx" TagName="ThemeSelector" TagPrefix="mb" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -26,7 +28,7 @@
                 Login box here...
             </div>
             <div id="themeselector">
-                Theme selector here...
+                <mb:ThemeSelector ID="ThemeSelector1" runat="server" />
             </div>
         </div>
     </div>
